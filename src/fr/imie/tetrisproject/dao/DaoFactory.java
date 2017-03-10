@@ -8,7 +8,7 @@ public class DaoFactory {
 	private DaoFactory() {
     }
 
-    public static HighscoreDao getPlaceDao() {
+    public static HighscoreDao getHighscoreDao() {
         return new JdbcHighscoreDao(ConnectionManager.getConnection());
     }
 
