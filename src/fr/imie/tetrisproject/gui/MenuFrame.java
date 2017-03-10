@@ -1,7 +1,6 @@
 package fr.imie.tetrisproject.gui;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -14,8 +13,15 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.SlickException;
+
+import fr.imie.tetrisproject.tetris.Tetris;
+
 public class MenuFrame extends JFrame{
 
+	static private AppGameContainer tetris;
+	
 	public MenuFrame(){
 		
 		setSize(400,550);
@@ -34,6 +40,12 @@ public class MenuFrame extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				dispose();
 				
+				try {
+					tetris = new AppGameContainer(new Tetris());
+					tetris.start();
+				} catch (SlickException e1) {
+					e1.printStackTrace();
+				}
 			}
 		});
 		
@@ -41,7 +53,7 @@ public class MenuFrame extends JFrame{
 		menuHighscores.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				dispose();
-				HighscoresFrame highscores = new HighscoresFrame();
+				HighscoreFrame highscores = new HighscoreFrame();
 			}
 		});
 		

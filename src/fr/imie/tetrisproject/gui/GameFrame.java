@@ -1,5 +1,5 @@
 package fr.imie.tetrisproject.gui;
 
-public class GameFrame {
-
+public class GameFrame{
+	
 }

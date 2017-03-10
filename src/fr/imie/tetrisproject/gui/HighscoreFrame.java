@@ -6,9 +6,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class HighscoresFrame extends JFrame{
+public class HighscoreFrame extends JFrame{
 
-	public HighscoresFrame(){
+	public HighscoreFrame(){
 		
 		setSize(400,550);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

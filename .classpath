@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="TetrisProject/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/mysql/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/AppleJavaExtensions.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/asm-debug-all.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/ibxm.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/jinput.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/jnlp.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/laf-plugin-7.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/laf-widget-7.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/log4j-api-2.0-beta9.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lwjgl_test.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lwjgl_util_applet.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lwjgl-debug.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lwjgl.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/lzma.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/natives-linux.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/natives-mac.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/natives-windows.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/slick.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/substance-7.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/tinylinepp.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl_slick2d/trident-7.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
