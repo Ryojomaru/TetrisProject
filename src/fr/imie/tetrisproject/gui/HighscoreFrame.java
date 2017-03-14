@@ -1,6 +1,9 @@
 package fr.imie.tetrisproject.gui;
 
 import java.awt.BorderLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,6 +24,9 @@ public class HighscoreFrame extends JFrame{
 		
 		JPanel highscores = new JPanel(new BorderLayout());
 		
+		JPanel displayHighscores = new JPanel(new GridBagLayout());
+		GridBagConstraints displayConstraints = new GridBagConstraints();
+		
 		Object[] scores = HighscoreDisplay.HighscoreDisplay();
 		
 		JLabel score1 = new JLabel("1er : " + scores[0]);
@@ -37,12 +43,15 @@ public class HighscoreFrame extends JFrame{
 			}
 		});
 		
-		//Foutre dans un grid bag 
-		highscores.add(score1,BorderLayout.NORTH);
-		highscores.add(score2,BorderLayout.NORTH);
-		highscores.add(score3,BorderLayout.NORTH);
-		highscores.add(score4,BorderLayout.NORTH);
-		highscores.add(score5,BorderLayout.NORTH);
+		displayConstraints.insets = new Insets(15, 0, 15, 0);
+		displayConstraints.gridheight = 5; displayConstraints.gridwidth = 3; displayConstraints.gridx = 2;
+		displayHighscores.add(score1,displayConstraints);
+		displayHighscores.add(score2,displayConstraints);
+		displayHighscores.add(score3,displayConstraints);
+		displayHighscores.add(score4,displayConstraints);
+		displayHighscores.add(score5,displayConstraints);
+		
+		highscores.add(displayHighscores, BorderLayout.NORTH);
 		highscores.add(returnToHighscores,BorderLayout.SOUTH);
 		
 		setContentPane(highscores);
