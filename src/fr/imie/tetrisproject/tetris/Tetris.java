@@ -7,26 +7,28 @@ import org.newdawn.slick.SlickException;
 
 public class Tetris extends BasicGame{
 
+	private Game game;
+	private Display display;
+	
 	public Tetris() {
 		super("TetrisProject");
 	}
 
 	@Override
-	public void init(GameContainer arg0) throws SlickException {
-		// TODO Auto-generated method stub
+	public void init(GameContainer gameContainer) throws SlickException {
+		game = new Game();
 		
+		gameContainer.setShowFPS(false);
 	}	
 
 	@Override
-	public void update(GameContainer arg0, int arg1) throws SlickException {
-		// TODO Auto-generated method stub
-		
+	public void update(GameContainer gameContainer, int delta) throws SlickException {
+		game.update(gameContainer.getInput(), delta);
 	}
 	
 	@Override
-	public void render(GameContainer arg0, Graphics arg1) throws SlickException {
-		// TODO Auto-generated method stub
-		
+	public void render(GameContainer gameContainer, Graphics graphic) throws SlickException {
+		display.display(game, gameContainer, graphic);
 	}
 
 }
