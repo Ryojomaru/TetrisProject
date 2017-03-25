@@ -17,13 +17,13 @@ public class Tetris extends BasicGame{
 	@Override
 	public void init(GameContainer gameContainer) throws SlickException {
 		game = new Game();
-		
+		display = new Display();
 		gameContainer.setShowFPS(false);
 	}	
 
 	@Override
 	public void update(GameContainer gameContainer, int delta) throws SlickException {
-		game.update(gameContainer.getInput(), delta);
+		game.update(gameContainer.getInput(), delta, gameContainer);
 	}
 	
 	@Override

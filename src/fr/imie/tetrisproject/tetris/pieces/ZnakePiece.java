@@ -19,7 +19,6 @@ public class ZnakePiece extends Piece{
 	
 	static {
         rotations = new Rotations[2];
-        //Inner arrays are the columns (vertical) - read as rotated by 90 degrees clockwise
         rotations[0] = new Rotations(new Block[][] {
                 {null,             new Block(color), new Block(color), null},
                 {new Block(color), new Block(color), null, null},

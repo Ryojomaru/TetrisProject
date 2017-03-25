@@ -35,4 +35,9 @@ public class FatPiece extends Piece{
 		this.height = rotations[0].getHeight();
 		this.width = rotations[0].getWidth();
 	}
+	
+	@Override
+	public void Rotate(Block[][] board){
+		
+	}
 }

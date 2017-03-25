@@ -19,7 +19,6 @@ public class BedLeftPiece extends Piece{
 	
 	static {
         rotations = new Rotations[4];
-        //Inner arrays are the columns (vertical) - read as rotated by 90 degrees clockwise
         rotations[0] = new Rotations(new Block[][] {
                 {new Block(color), null, null, null},
                 {new Block(color), null, null, null},
